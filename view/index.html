@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registro Persona</h1>
+    <label for="">Tipo Dcouemento</label>
+    <select name="" id="TipoDocumento">
+    <option value="CC">Cedula de Ciudadania</option>
+    <option value="TI">Tarjeta de Identidad</option>
+    </select>
+    <br>
+    <label for="">Nombre</label>
+    <input id="nombre" type="text">
+    <br>
+    <label for="">Apellido</label> 
+    <input id="apellido" type="text">
+    <br>
+    <label for="">Edad</label>
+    <input id="edad" type="number">
+    <br>
+    <label for="">Documento</label>
+    <input id="documento" type="number">
+    <br>
+    <label for="">Correo</label>
+    <input id="correo" type="email">
+    <button onclick="registrarPersona();">Registrar</button>
+    <button onclick="registrarPersona2();">Registrar otra Forma</button>
+    <table border="1">
+        <tr>
+            <th>tipo Documento</th>
+            <th>Documento</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Correo Electronico</th>
+        </tr>
+        <!-- se va a crear un elemento que almacene
+        los registros nuevos -->
+        <tbody id="cuerpoTabla">
+            <tr>
+                <td colspan="6">NO HAY NADA QUE MOSTRAR</td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="1">
+        <tr>
+            <th>tipo Documento</th>
+            <th>Documento</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Correo Electronico</th>
+            <th>Accion</th>
+        </tr>
+        <!-- se va a crear un elemento que almacene
+        los registros nuevos -->
+        <tbody id="cuerpoTabla2">
+            <tr>
+                <td colspan="6">NO HAY NADA QUE MOSTRAR</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="/RegistroPersona/js/index.js"></script>
+</body>
+</html>
